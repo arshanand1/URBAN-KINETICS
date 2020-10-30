@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>475</width>
+    <height>383</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color:rgb(170, 170, 255)</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QPushButton" name="mem">
+    <property name="geometry">
+     <rect>
+      <x>120</x>
+      <y>80</y>
+      <width>201</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="statusTip">
+     <string>Add a new member</string>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:rgb(255, 255, 0)</string>
+    </property>
+    <property name="text">
+     <string>New Member</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="exist">
+    <property name="geometry">
+     <rect>
+      <x>120</x>
+      <y>130</y>
+      <width>201</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="statusTip">
+     <string>Records of existing members</string>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:rgb(0, 255, 127)</string>
+    </property>
+    <property name="text">
+     <string>Existing Records</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="train">
+    <property name="geometry">
+     <rect>
+      <x>120</x>
+      <y>180</y>
+      <width>201</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="statusTip">
+     <string>Details of Trainers</string>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:rgb(85, 170, 0)</string>
+    </property>
+    <property name="text">
+     <string>Trainers List</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="bal">
+    <property name="geometry">
+     <rect>
+      <x>120</x>
+      <y>230</y>
+      <width>201</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="statusTip">
+     <string>Balance details of members </string>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:rgb(255, 170, 0)</string>
+    </property>
+    <property name="text">
+     <string>Balance Details </string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>0</y>
+      <width>431</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Open Sans</family>
+      <pointsize>24</pointsize>
+      <underline>true</underline>
+     </font>
+    </property>
+    <property name="text">
+     <string>URBAN KINETICS</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>475</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="new_entry"/>
+    <addaction name="existingmember"/>
+   </widget>
+   <addaction name="menuFile"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="new_entry">
+   <property name="text">
+    <string>New Entry</string>
+   </property>
+   <property name="statusTip">
+    <string>Add a new entry</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+N</string>
+   </property>
+  </action>
+  <action name="existingmember">
+   <property name="text">
+    <string>Existing Entry</string>
+   </property>
+   <property name="statusTip">
+    <string>find details of existing members</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+E</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
